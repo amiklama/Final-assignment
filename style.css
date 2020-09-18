@@ -1,0 +1,361 @@
+
+*{
+    text-decoration: none;
+}
+body{
+    padding: 0;
+    margin: auto; 
+    max-width: 1150px; 
+    align-content: center;
+}
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+.flex{
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.link li{
+    list-style: none;
+}
+.link a{
+    margin-right: 30px;
+}
+.link img:hover{
+    margin-top: -25px;
+}
+.name{
+    margin-left: -100px;
+    font-size: 20px;
+}
+.name h1{
+    color: rgb(0, 0, 0);
+}
+.name h1:hover{
+    font-family: 'Londrina Outline', cursive;
+}
+.nav{
+    margin-top: -20px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.nav li{
+    text-decoration: none;
+    list-style: none;
+
+}
+.nav a{
+    color: black;
+}
+ .horder img{
+    margin: 60px;
+    
+ }
+ .horder{
+     background-color: #1D1D1D;
+ }
+ .horder > div:first-child{
+     max-width: 40%;
+ }
+ .horder p{
+    font-size: 30px;
+    text-align: justify;
+    color: #aaa;
+}
+.horder h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: #aaa;
+}
+.horder h2{
+    font-size: 40px;
+    text-align: center; 
+}
+
+.horder a{
+    background-color: rgb(224, 68, 20);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.horder a:hover{
+    background-color: greenyellow;
+    color: black;
+    transition:background 0.5s;
+}
+
+ @media(max-width:600px){
+    .link a{
+        margin-right: 5px;
+    }
+    .name{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .link img{
+        width: 20px;
+    }
+    .link ul{
+        padding: 0;
+    }
+    .menu{
+        padding: 5px;
+        width: 20px;
+    }
+    .menu div{
+        margin: 3px;
+    }
+    .main-nav p{
+        font-size: 10px;
+    }
+    .horder p{
+        font-size: 1.5em ;
+        padding: 0px;
+        width: 100%;
+    }
+    .horder h1{
+        font-size: 2em;
+    }
+    .horder{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .horder img{
+        display: none;
+    }
+    .horder h2{
+        font-size: 20px;
+    }
+    
+}  
+/* Tab */
+@media(max-width:995px){
+    .horder{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    .horder p{
+        margin: auto;
+    }
+}
+/* home page csss ends here */
+
+/* start of gallery */
+.images{
+    margin: 40px;
+}
+.image{
+    margin:20px;
+}
+.image p{
+    text-align: center;
+    margin-top: -5px;
+}
+.gallery-body{
+    background-color: #f4f7f6;
+}
+#cart{
+    padding-top: px;
+}
+.caption{
+    text-align: center;
+    position: static;
+}
+.order{
+    margin-top: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+.items{
+    width: 100%;
+}
+.item{
+    float: left;
+    margin: 0px 20px;
+    background-color: rgb(59, 59, 59);
+    margin-bottom: 10px;
+}
+.c-carts{
+   margin: auto;
+    width: 50%;
+}
+.c-cart{  
+    float: left;
+    margin-right: auto;
+    clear: both;
+    width: 100%;
+}
+
+.c-detail{
+    margin-right: 5px;
+    float: left;
+    width: 30%;
+}
+.p-name{
+    margin: auto;
+    text-align: center;
+}
+.add-to-cart{
+    float: right;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color:rgb(224, 68, 20);;
+}
+.add-to-cart:hover{
+    background-color: greenyellow;
+    color: black;
+    -webkit-transition:background 0.5s;
+    -o-transition:background 0.5s;
+    transition:background 0.5s;
+}
+.p-price{
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+.item-name{
+    text-decoration: none;
+}
+.item-quantity{
+    width: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.item-delete{
+    margin-left: 3px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.c-quantity {
+    margin: auto;
+}
+.total{
+    width: 100%;
+    text-align: center;
+}
+.purchase{
+    width: 100%;
+}
+.purchase button{
+    background-color: skyblue;
+    color: white;
+}
+@media(max-width:995px){
+  .c-carts{
+    float: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/* form  */
+input[type="text"],#fname #email,#gender,#password, #address, #phone,#type,#message {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+.container-form h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: #333333;
+  }
+  
+  .container-form {
+    border-radius: 5px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    max-width: 100px;
+    margin: auto;
+   
+  }
+  .l-purchase {
+    background: #51c4ff;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .l-purchase:hover {
+    background-color: #7dd4ff;
+  }
+
+  /* contact */
+  .left-contact{
+      width: 45%;
+  }
+  .right-contact{
+    width: 50%;
+}
+ .right-contact button{
+    background-color: #aaa;
+    color: White;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    height: 30px;
+ }
+ @media(max-width:1200px){
+    .contact-page{
+        flex-direction: column;
+    }
+    .left-contact{
+        width: 90%;
+    }
+    .right-contact{
+      width: 90%;
+  }
+  }
+
+
+ .footer{
+     align-items: center;
+ }
+ .footer p{
+     text-align: center;
+ }
+/* responsive for footer */
+
+@media(max-width:550px) {
+    .footer-part {
+        display: block;
+        text-align: center;
+    }
+}
